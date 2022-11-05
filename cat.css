@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*geral*/
+
+html{
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-size: 100%;
+	font-size: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background: #320e72;
+	font-family: 'Noto Sans', sans-serif;
+	position: relative;
+	overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, input, button, a, img{
+	padding: 0;
+	margin: 0;
+	outline: none;
+	border: none;
+}
+
+/*gatinho*/
+
+img.gatinho{
+	width: 40%;
+	right: 15%;
+	margin-top: 60%;
+	position: absolute;
+	z-index: 2;
+}
+
+/*menu*/
+
+section.menu{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	top: 30px;
+	left: 0;
+	z-index: 3;
+	width: 100%;
+	padding: 40px 100px 0 100px;
+}
+
+section.menu div.icon{
+	font-size: 2em;
+	color: #fafafa;
+	margin-right: 80px;
+	transition: all .3s;
+}
+
+section.menu div.icon:hover{
+	opacity: 0.5;
+}
+
+section.menu img.logo{
+	width: 100%;
+	max-width: 100px;
+	pointer-events: none;
+	margin-right: auto;
+}
+
+section.menu div.opcoes{
+	display: flex;
+	margin: 0 100px 0 0;
+}
+
+section.menu div.opcoes a{
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0 20px;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+section.menu div.opcoes a:hover{
+	opacity: 0.5;
+}
+
+
+section.menu button{
+	background: transparent;
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: white;
+	padding: 10px;
+	border: 3px solid #9401c4;
+	border-radius: 10px 0px 5px 10px;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+section.menu button:hover{
+	background: #9401c4;
+	color: #320e72;
+}
+
+/*titulo*/
+
+section.titulo{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: absolute;
+	margin-top: 50%;
+	left: 0;
+	padding: 0 0 0 90px;
+}
+
+section.titulo div.texto{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+	padding: 0 0 0 90px;
+}
+
+section.titulo div.texto h1{
+	font-weight: bold;
+	font-size: 6em;
+	color: white;
+	text-transform: uppercase;
+}
+
+section.titulo div.texto h2{
+	font-weight: bold;
+	font-size: 6em;
+	color: white;
+	text-transform: uppercase;
+	position: absolute;
+	left: 0;
+	top: 35%;
+}
+
+section.titulo button{
+
+	background: #9401c4;
+	font-weight: bold;
+	font-size: 1em;
+	letter-spacing: 1px;
+	color: white;
+	padding: 10px;
+	margin-top: 20px;
+	border: 3px solid  #9401c4;
+	border-radius: 10px 0px 5px 10px;
+	transition: all .3s;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+section.titulo button:hover{
+	border: 1px solid #fafafa;
+	box-shadow: 0 10px 30px 10px RGBA(148,1,196, .4);
+}
+
+/*texto pessoas*/
+
+section.pessoas{
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 10%;
+	left: 200px;
+}
+
+section.pessoas div{
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 0 20px;
+}
+
+section.pessoas div h2{
+	font-weight: bold;
+	font-size: 1.8em;
+	color: #fafafa;
+}
+
+section.pessoas div p{
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #9401c4;
+}
+
+/*icones laterais*/
+
+section.icones{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	align-items: center;
+	right: 90px;
+	margin-top: 50%;
+	font-size: 1.2em;
+}
+
+section.icones i{
+	margin: 20px 0;
+	color: white;
+	transition: all .3s;
+}
+
+section.icones i:hover{
+	color: #9401c4;
+	transform: scale(1.2);
+}
+
+
+/*-----------------------------------*/
+/*media screnn maximo 768px*/
+/*------------------------------------*/
+
+@media (max-width: 48em){
+/*menu*/
+section.menu{
+	padding: 30px 30px 0 30px;
+}
+
+section.menu div.icon{
+	display: none !important;
+}
+
+section.menu img.logo{
+	max-width: 140px;
+	margin-right: 0;
+}
+
+section.menu .opcoes{
+	display: none !important;
+}
+
+/*titulo*/
+
+section.titulo{
+	top: 10px;
+	padding: 0 0 0 5px;
+}
+
+section.titulo div.texto{
+	padding: 0 0 0 30px;
+}
+
+section.titulo div.texto h1{
+	font-size: 2em;
+}
+
+section.titulo div.texto h2{
+	font-size: 2em;
+}
+
+section.titulo button{
+	font-size: 0.8em;
+	padding: 5px;
+}
+
+/*icones laterais*/
+
+section.icones{
+	display: none !important;
+}
+
+/*gatinho*/
+
+img.gatinho{
+	width: 100%;
+	max-width: 300px;
+	right: -10px;
+	top: 110px;
+}
+}
+
